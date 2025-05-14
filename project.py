@@ -15,7 +15,8 @@ from sklearn.metrics import mean_squared_error, r2_score
 import matplotlib.pyplot as plt
 
 # Step 1: Load dataset
-df = pd.read_csv('house_prices_large.csv')  # Ensure this CSV is in your working directory
+df = pd.read_csv('house_prices_large.csv')# Ensure this CSV is in your working directory 
+print(df.head())
 
 # Step 2: Define features and target
 X = df[['Area', 'Bedrooms', 'Bathrooms', 'Parking', 'Age']]
